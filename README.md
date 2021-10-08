@@ -1,12 +1,17 @@
-## Parkit API
+# Parkit API
 
-Parkit is an API of a parking management system developed using Node.js,Express.js and MongoDB.
+### Parkit is an API of a parking management system developed using Node.js,Express.js and MongoDB.</br>
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-plain.svg" height=40 width=40 /><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-plain.svg" height=40 width=40/><img src="https://www.vectorlogo.zone/logos/expressjs/expressjs-icon.svg" height=40 width=40 />  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-plain-wordmark.svg" height=40 width=40 />
+
+
+
+
 
 It makes parking easier for vehicles as it gets you the nearest to exit and available parking slot and Also makes it easier for Parking Owners/Workers to keep track of each car (time stayed,fees calculation,car/driver details(parking license and driver's national id number ))
 
 
 
-Features:
+### Features and what can be done:
 
 
 
@@ -15,7 +20,7 @@ Features:
 - [x] A User(Admin/Moderator) can login with his card ID and password
 - [x] A User(Admin/Moderator) can read his own profile
 - [x] A User(Admin/Moderator) can update his own profile
-- [x] An Admin can Read/Delete a Moderator using the moderator's card ID number
+- [x] An Admin can Read/Delete a Moderator using the moderator's card ID number (An Admin can't delete any other Admin)
 - [x] An Admin can read all users(Admins/Moderators)
 
 ---
@@ -53,12 +58,94 @@ Features:
 
 
 ---
+### Postman collection
+![image](https://user-images.githubusercontent.com/78238174/136584844-d16bf759-3c4e-4fa1-8814-2a5ad42d8803.png)
+</br>![image](https://user-images.githubusercontent.com/78238174/136584970-b57253fe-2899-4e57-a1a8-ebea70a3c1d0.png)
+
+
+### Routes and Demonstration of some requests
+
+- Signup
+
+![image](https://user-images.githubusercontent.com/78238174/136580443-8ca6d394-3443-4932-9085-b7a387f79363.png)
+
+
+- Login
+
+![image](https://user-images.githubusercontent.com/78238174/136580559-a127635a-31a7-42fc-ae0b-c903ae5e721e.png)
+
+---
+- Read Own Profile (Admin/Moderator)
+
+![image](https://user-images.githubusercontent.com/78238174/136585492-51d4831c-924c-4cd2-8105-03ceaa9430ae.png)
+
+- Update Own Profile (Admin/Moderator)
+
+![image](https://user-images.githubusercontent.com/78238174/136585909-1dfbb249-14ab-4445-970b-967b5064761d.png)
+
+- Delete a User(a moderator to be precise)by Card ID (Admin)
+
+![image](https://user-images.githubusercontent.com/78238174/136586367-0ca9c861-f2e3-4001-ab5e-3cf91f012131.png)
+
+- Read a User(Another Admin or a Moderator)by Card ID (Admin)
+
+![image](https://user-images.githubusercontent.com/78238174/136586818-b11fc610-45e1-4e21-b28d-ab9ec1f9a3c7.png)
+
+- Read all Users(Admins(including the logged in admin) and Moderators)  (Admin)
+
+![image](https://user-images.githubusercontent.com/78238174/136587307-76eef669-6a71-4270-ab47-b3dffb45d60e.png)
+
+
+---
+- Create a Floor (Admin)
+
+![image](https://user-images.githubusercontent.com/78238174/136587804-ad220e25-d692-4da0-89a7-9261b9d382ff.png)
+![image](https://user-images.githubusercontent.com/78238174/136588038-e56ba834-00c4-4d84-97f6-05c8db69ac84.png)
+![image](https://user-images.githubusercontent.com/78238174/136588133-6e8ef8e7-1959-4fde-88eb-08346670a451.png)
+![image](https://user-images.githubusercontent.com/78238174/136588390-666e2c90-baad-4cc1-95e3-d1dc4e5c86bf.png)
+
+- Delete a Floor (Admin)
+
+![image](https://user-images.githubusercontent.com/78238174/136596463-251fa840-6c73-4b54-ac0a-83a25b57c8d8.png)
+ Note:This will also delete parking slots documents and vehicles(if there is any) documents ((Parking slots and Vehicles associated with the deleted floor 'just to be precise' ))
+
+
+---
+- Reserve the nearest available parking slot for a vehicle (Admin/Moderator)
+
+![image](https://user-images.githubusercontent.com/78238174/136589342-a2903bd2-9d80-4f32-b8c9-9a43664a8993.png)
+![image](https://user-images.githubusercontent.com/78238174/136589522-9d5de944-0fd9-40ce-ad80-ab735f9886e2.png)
+![image](https://user-images.githubusercontent.com/78238174/136591468-6d210baa-4831-4c04-88e0-41966ff17ea4.png)
+
+
+- Checkout and Calculate Parking fees
+
+![image](https://user-images.githubusercontent.com/78238174/136593289-677124dd-db28-480a-930c-b0772245106a.png)
 
 
 
 
+- Get nearest available parking slot (Admin/Moderator)
 
+![image](https://user-images.githubusercontent.com/78238174/136588788-29767e84-e882-476c-81a1-8ff1ef526901.png)
+---
+- Display a Floor(including slots and vehicles) by providing the floor number as a request param (Admin/Moderator)
 
+![image](https://user-images.githubusercontent.com/78238174/136590162-8ed32873-5128-4f32-be1b-67f518589317.png)
+
+- Display all floors(including slots and vehicles) (Admin/Moderator)
+
+![image](https://user-images.githubusercontent.com/78238174/136591168-bec836b9-9570-4115-9140-b24e8be4a6e6.png)
+
+full photo to be added
+
+- Display a Parking Slot by providing the slot name as a req param
+
+![image](https://user-images.githubusercontent.com/78238174/136591870-0aa4b42c-592a-4942-92f2-1a389d93fa32.png)
+
+- Display a Vehicle by providing its license plate as a req param
+
+![image](https://user-images.githubusercontent.com/78238174/136592127-a8c10a9a-b6ad-4c94-8045-5bfde92471f8.png)
 
 
 
