@@ -135,18 +135,26 @@ It makes parking easier for vehicles as it gets you the nearest to exit and avai
 
 - Display all floors(including slots and vehicles) (Admin/Moderator)
 
-![image](https://user-images.githubusercontent.com/78238174/136591168-bec836b9-9570-4115-9140-b24e8be4a6e6.png)
+![image](https://user-images.githubusercontent.com/78238174/136609528-2a6fd8a5-48c8-4c0a-9898-000c6328a769.png)
 
-full photo to be added
+![image](https://user-images.githubusercontent.com/78238174/136609497-65d9998f-1f4c-46da-acd5-a6eac182b208.png)
 
-- Display a Parking Slot by providing the slot name as a req param
+
+- Display a Parking Slot by providing the slot name as a req param (Admin/Moderator)
 
 ![image](https://user-images.githubusercontent.com/78238174/136591870-0aa4b42c-592a-4942-92f2-1a389d93fa32.png)
 
-- Display a Vehicle by providing its license plate as a req param
+- Display all Parking Slots (Admin/Moderator)
+
+![image](https://user-images.githubusercontent.com/78238174/136609822-48a3cb5c-2209-4078-bda4-341ded8da794.png)
+
+- Display a Vehicle by providing its license plate as a req param (Admin/Moderator)
 
 ![image](https://user-images.githubusercontent.com/78238174/136592127-a8c10a9a-b6ad-4c94-8045-5bfde92471f8.png)
 
+- Display all vehicles (Admin/Moderator)
+
+![image](https://user-images.githubusercontent.com/78238174/136609992-726f37ee-ba25-49d1-9939-9d5e3f741075.png)
 
 
 
