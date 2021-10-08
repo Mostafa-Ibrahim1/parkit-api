@@ -23,15 +23,6 @@ const vehicleSchema = new mongoose.Schema({
     ref: "parking-slot",
   },
 });
-/*
-{
-  "driverName":"Jurgen",
-  "carDescription":"Nissan Sunny Black",
-  "licensePlate":"123AA",
-  "driverNationalId":"12345678901234",
 
-  
-}
- */
 const Vehicle = mongoose.model("vehicle", vehicleSchema);
 module.exports = Vehicle;

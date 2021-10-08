@@ -18,7 +18,6 @@ parkingSlotSchema.virtual("vehicle", {
   ref: "vehicle",
   localField: "_id",
   foreignField: "parkingSlot",
-  justOne: true,
 });
 
 const ParkingSlot = mongoose.model("parking-slot", parkingSlotSchema);
