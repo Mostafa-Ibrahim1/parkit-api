@@ -3,8 +3,15 @@ const ParkingSlot = require("./ParkingSlot");
 const Vehicle = require("./Vehicle");
 const floorSchema = new mongoose.Schema(
   {
-    floorNumber: { type: Number, required: true },
-    slotsNumber: { type: Number, required: true },
+    floorNumber: {
+      type: Number,
+      required: [true, "Floor Number has to be provided"],
+      unique: [true, "This Floor already exists"],
+    },
+    slotsNumber: {
+      type: Number,
+      required: [true, "Number of Parking slots has to be provided"],
+    },
   },
   {
     toJSON: { virtuals: true },

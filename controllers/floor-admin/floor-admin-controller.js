@@ -1,6 +1,7 @@
 const Floor = require("../../models/Floor");
 const ParkingSlot = require("../../models/ParkingSlot");
 const makeFloor = require("../../Utils/tools");
+const errorHandler = require("../../Utils/errorHandler");
 //floor by floor
 exports.createFloor = async (req, res, next) => {
   try {
@@ -19,7 +20,12 @@ exports.createFloor = async (req, res, next) => {
       .status(201)
       .send({ success: true, message: "Floor Created Successfully!" });
   } catch (error) {
-    res.status(500).send({ success: false });
+    const errorMessage = errorHandler(error);
+    if (!errorMessage) {
+      res.status(500).json({ success: false });
+    } else {
+      res.status(400).json({ success: false, error: errorMessage });
+    }
   }
 };
 
