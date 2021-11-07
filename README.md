@@ -7,7 +7,7 @@
 
 
 
-It makes parking easier for vehicles as it gets you the nearest to exit and available parking slot and Also makes it easier for Parking Owners/Workers to keep track of each car (time stayed,fees calculation,car/driver details(parking license and driver's national id number ))
+It makes parking easier for vehicles as it gets you the nearest to exit and available parking slot and Also makes it easier for Parking Owners/Workers to keep track of each car (time stayed,fees calculation,car/driver details(car license and driver's national id number ))
 
 
 
